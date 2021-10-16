@@ -36,7 +36,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Sleeping
-        run: SLEEP(5)
+        run: SLEEP 5
         
       - run: dotnet test MsSQLIntegrationTest.sln  
 
