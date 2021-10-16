@@ -10,7 +10,7 @@ namespace Tests
         [TestMethod]
         public void ConnectToSqlServer()
         {
-            var connStr = "Server=localhost;Database=master;User Id=sa;Password=Pa55word!;";
+            var connStr = "Server=localhost;Database=master;User Id=sa;Password=Pa55word!;TrustServerCertificate=true;";
             var conn = new SqlConnection(connStr);
             conn.Open();
 
