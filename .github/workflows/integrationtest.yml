@@ -35,8 +35,8 @@ jobs:
         run: docker-compose -f "docker-compose.yml" up -d --build
 
       # Runs a single command using the runners shell
-      - name: Sleeping 30 secs
-        run: sleep 30s
+      - name: Sleeping 5 secs
+        run: sleep 5s
         shell: bash
         
       - run: dotnet test MsSQLIntegrationTest.sln  
