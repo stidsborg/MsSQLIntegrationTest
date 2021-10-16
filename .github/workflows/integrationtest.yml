@@ -35,8 +35,8 @@ jobs:
         run: docker-compose -f "docker-compose.yml" up -d --build
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+      - name: Sleeping
+        run: SLEEP(5)
         
       - run: dotnet test MsSQLIntegrationTest.sln  
 
